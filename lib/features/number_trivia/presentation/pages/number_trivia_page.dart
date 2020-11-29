@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../injection_container.dart';
+import '../widgets/widgets.dart';
 
 class NumberTriviaPage extends StatelessWidget {
   @override
@@ -44,6 +45,7 @@ class NumberTriviaPage extends StatelessWidget {
                       message: state.message,
                     );
                   }
+                  return MessageDisplay(message: "Unknown state value!");
                 },
               ),
               SizedBox(height: 20),
